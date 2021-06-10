@@ -15,4 +15,3 @@ $(function () {
         play.style.display = "none";
     }
 }*/
-
