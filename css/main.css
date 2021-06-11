@@ -16,7 +16,7 @@ a {
 .header {
     width: 100vw;
     position: fixed;
-    z-index: 100;
+    z-index: 1;
     top: 0;
     padding: 0 10%;
     margin-bottom: 72px;
@@ -50,6 +50,25 @@ a {
 }
 
 .menubtn:hover{
+    background: #fff;
+    color:#000;
+    animation: btn1 0.5s ;
+    animation-fill-mode: forwards;
+}
+
+.logbtn{
+    position: absolute;
+    right: 120px;
+    z-index: 100;
+    width: auto;
+    height: 59px;
+    color: white;
+    font-size: 20px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.logbtn:hover{
     background: #fff;
     color:#000;
     animation: btn1 0.5s ;
@@ -123,6 +142,56 @@ a {
 
 .hide_menu2 > li > a {
     color: white;
+}
+
+.log_menu{
+    display: none;
+    position: absolute;
+    right: 120px;
+    top: 59px;
+    width: 233.89px;
+    height: 3.3vw;
+    padding: 10px;
+    color: white;
+    z-index: 2;
+    box-sizing: border-box;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.log_menu>a{
+    color: white;
+}
+
+.logbtn:hover + .log_menu{
+    display: block;
+    animation: slide1 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.log_menu:hover{
+    display: block;
+    animation: color1 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.log_menu:hover>a{
+    animation: color1 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes color1 {
+    0% {
+        background: none;
+       color: white;
+    }
+    100% {
+        background:white;
+        color: black;
+    }
 }
 
 .container {
