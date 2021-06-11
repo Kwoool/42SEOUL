@@ -17,6 +17,7 @@ a {
 #wrap{
     background: black;
     width: 100%;
+    height: 969px;
     color: white;
 }
 
@@ -130,20 +131,47 @@ a {
     color: white;
 }
 
+.container {
+    padding: 0 20%;
+}
 
+.write_box{
+    width: fit-content;
+    padding: 6px;
+    border: white solid 1px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px 0 10px 1070px;
+}
 
+.write_box>a{
+    color:white;
+}
 
+.table_type {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+}
 
+.table_type > ul > li {
+    width: 1140px;
+    height: 50px;
+    border-top: white solid 1px;
+    margin: 6px;
+    box-sizing: border-box;
+    padding-top: 16px;
+}
 
-
-
-
-
-
-
-
-
-
+.pagebox {
+    padding: 0 auto;
+    box-sizing: border-box;
+    padding-left: 440px;
+}
 
 
 
@@ -154,6 +182,7 @@ a {
     border: 1px solid #fff;
     color: #fff;
     padding-left: 20%;
+    margin-top: 20px;
 }
 
 .footer_menu{

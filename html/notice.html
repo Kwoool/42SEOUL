@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"/>
         <link rel="stylesheet" href="../css/notice.css">
     </head>
+
     <body>
         <div id="wrap">
             <div class="header">
@@ -50,35 +48,20 @@
                     </div>
                 </div>
             </div>
-            
-            
-            
-            
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
 
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            <div class="container">
+                <h1>Notice</h1>
+
+                <div>
+                    <section>
+                        <div id="data-container" class="table_type"></div>
+                        <div class="pagebox">
+                            <div id="pagination"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
             <div class="footer">
                 <ul class="footer_menu">
                     <li class="string_bold">42 SEOUL</li>
@@ -101,6 +84,5 @@
             </div>
         </div>
     </body>
-</html>
-</body>
+    <script src="../notice.js"></script>
 </html>
