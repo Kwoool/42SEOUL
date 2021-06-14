@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Review_modify</title>
+        <script type="text/javascript" src="../js/review_modify.js"></script>
+        <link rel="stylesheet" href="../css/board_delete.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <!--header start-->
+            <div class="header">
+                <a href="###"><img src="../../img/logo.jpg"></a>
+                <div class="header_menu">
+                    <a href="###">학원소개</a>
+                    <a href="###">교육과정</a>
+                    <a href="###">취업자인터뷰</a>
+                    <a href="###">알림</a>
+                    <a href="###">지원 및 질문</a>
+                    <a id="loginBtn" href="###">로그인</a>
+                    <a href="###">회원가입</a>
+                </div>
+            </div>
+            <!--header end-->
+            
+            <!--login start-->
+            <div id="loginLayer">
+                <div id="loginPopup" style="margin-top: 200px;">
+                    <div id="loginForm">
+                        <h2>로그인이나 로고 넣기</h2>
+                        <input id="userid" type="text" placeholder="아이디">
+                        <input id="userpw" type="password" placeholder="비밀번호">
+                        <button id="login" class="loginSubmit">로그인</button>
+                        <div id="or">
+                            <div id="line"></div>
+                            <div id="or_text"><h3>또는</h3></div>
+                            <div id="line" style="float: right;"></div>
+                        </div>
+                        <h3 style="margin-top: 30px;"><a href="#">회원 가입<a></h3>
+                        <h3><a href="#">채팅 문의<a></h3>
+                        <h3><a href="#">메일 문의<a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--login end-->
+            
+            <!--review_modify start-->
+            <div id="boardLayer">
+                <div id="boardPage">
+                    <div id="boardBox">
+                        <h1>수강후기</h1>
+                        <div id="content">
+                            <div id="space" style="height: 35px;"></div>
+                            <form id="pwd">
+                                <div id="boardOuter">
+                                    <table id="board">
+                                        <tbody>
+                                            <tr>
+                                                <th>계정 비밀번호</th>
+                                                <td>
+                                                    <input type="password" name="pwd1">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>글 비밀번호</th>
+                                                <td>
+                                                    <input type="password" name="pwd2">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="btnGroup_center">
+                                    <button type="submit">확인</button>
+                                    <button type="button">취소</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--review_modify end-->
+
+        </div>
+    </body>
+</html>
