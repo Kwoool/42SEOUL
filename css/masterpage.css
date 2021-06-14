@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: none;
+}
+
+li,
+ol,
+ul {
+    list-style: none;
+}
+
+/*header*/
+
+.header {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    background: darkgrey;
+}
+
+/*container*/
+
+.container {
+    width: 1903px;
+    height: 100%;
+}
+
+/*sidebar*/
+
+.sidebar {
+    width: 150px;
+    height: 100%;
+    float: left;
+
+}
+
+.menu {
+    border: 1px solid black;
+    font-size: 24px;
+    background: whitesmoke;
+    margin-top: 50px;
+}
+
+.menu1_1,
+.menu2_2,
+.menu3_3,
+.menu4_4,
+.menu5_5,
+.menu6_6,
+.menu7_7 {
+    display: block;
+    font-size: 20px;
+}
+
+.submenu1,
+.submenu2,
+.submenu3,
+.submenu4{
+    border: 1px solid black;
+    background: wheat
+}
+
+/*content*/
+
+.content {
+    width: 1753px;
+    height: 100%;
+    margin-top: 50px;
+    float: left;
+    background: turquoise;
+}
