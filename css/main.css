@@ -13,6 +13,8 @@ a {
     text-decoration: none;
 }
 
+/*header*/
+
 .header {
     width: 100vw;
     position: fixed;
@@ -194,6 +196,8 @@ a {
     }
 }
 
+/*container*/
+
 .container {
     padding: 20%;
     color: white;
@@ -266,6 +270,8 @@ a {
 .section5 {
     background-image: url("../img/background10.jpg");
 }
+
+/*footer*/
 
 .footer{
     position: absolute;

@@ -20,6 +20,8 @@ a {
     color: white;
 }
 
+/*header*/
+
 .header {
     width: 100vw;
     height: 65.38px;
@@ -130,23 +132,7 @@ a {
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*footer*/
 
 .footer{
     width:80%;

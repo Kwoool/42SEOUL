@@ -20,6 +20,8 @@ a {
     color: white;
 }
 
+/*header*/
+
 .header {
     width: 100vw;
     height: 65.38px;
@@ -130,6 +132,8 @@ a {
     color: white;
 }
 
+/*container*/
+
 .container{
     padding: 0 20% 0 20%;
 }
@@ -150,10 +154,7 @@ a {
     padding: 30px;
 }
 
-
-
-
-
+/*footer*/
 
 .footer{
     width:80%;
