@@ -21,6 +21,15 @@ ul {
     text-align: center;
     margin-bottom: 10px;
     background: darkgrey;
+    border: 1px solid black;
+}
+
+.header>a{
+    color: black;
+    margin-left: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background:white;
 }
 
 /*container*/
@@ -36,25 +45,19 @@ ul {
     width: 150px;
     height: 100%;
     float: left;
-
 }
 
 .menu {
     border: 1px solid black;
     font-size: 24px;
     background: whitesmoke;
-    margin-top: 50px;
+    cursor: pointer;
 }
 
-.menu1_1,
-.menu2_2,
-.menu3_3,
 .menu4_4,
-.menu5_5,
-.menu6_6,
-.menu7_7 {
-    display: block;
+.menu5_5 {
     font-size: 20px;
+    cursor: pointer;
 }
 
 .submenu1,
@@ -62,7 +65,8 @@ ul {
 .submenu3,
 .submenu4{
     border: 1px solid black;
-    background: wheat
+    background: wheat;
+    cursor: pointer;
 }
 
 /*content*/
@@ -70,7 +74,37 @@ ul {
 .content {
     width: 1753px;
     height: 100%;
-    margin-top: 50px;
     float: left;
-    background: turquoise;
 }
+
+/*counseling*/
+
+.counseling>li{
+    width: 30%;
+    height: 600px;
+    float: left;
+    margin: 0 0 20px 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.delete_box{
+    width: 14px;
+    height: fit-content;
+    border: 1px solid black;
+    z-index: 2;
+    position: relative;
+    background:lightslategray;
+    float: right;
+    text-align: center;
+}
+
+.chatting_box{
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    position: relative;
+    box-sizing: border-box;
+}
+ 
