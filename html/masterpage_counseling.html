@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="../css/masterpage.css">
+        <script src="../masterpage.js"></script>
     </head>
     
     <body>
@@ -15,7 +16,6 @@
             <!--header start-->
             <div class="header">
                 관리자페이지입니다.
-            <a href="###">로그인</a>
             </div>
             <!--header end-->
 
@@ -31,11 +31,9 @@
                     <div class="menu menu2">
                         해쉬태그   <!--팝업창 띄우기-->
                     </div>
-                    
                     <div class="menu menu3">
                         취업자인터뷰
                     </div>
-                    
                     <div class="menu menu4">
                         알림 및 질문
                     </div>
@@ -47,7 +45,6 @@
                             FAQ
                         </div>
                     </div>
-
                     <div class="menu menu5">
                         지원서
                     </div>
@@ -59,20 +56,30 @@
                             수강후기
                         </div>
                     </div>
-
                     <div class="menu menu6">
                         회원관리
                     </div>
-                    
                     <div class="menu menu7">
                         1:1 상담기능   <!--각 div마다 삭제버튼이 존재해야함-->
                     </div>
+                    <div class="counseling_apply" onclick="apply()">신청하기</div>
                 </div>
                 <!--sidebar end-->
 
         <!--content start-->
         <div class="content">
-            각 html이 들어갈 자리입니다~~~
+            <ul class="counseling">
+                <li class="bigbox">
+                    <div class="delete_box delBtn">
+                        X
+                    </div>
+                    <div class="chatting_box">
+                        채팅창 들어갈곳
+                    </div>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
         <!--content end-->
     </div>    

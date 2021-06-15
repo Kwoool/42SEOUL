@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+div{
+    display: block;
+}
+li, ol, ul {
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    box-sizing: inherit;
+}
+table, thead, tbody, tr, th, td{
+    box-sizing: border-box;
+}
+
+/* header */
+.header {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    background: darkgrey;
+}
+
+/* container */
+.container {
+    width: 1903px;
+    height: 100%;
+}
+
+/* sidebar */
+.sidebar {
+    width: 150px;
+    height: 100%;
+    float: left;
+
+}
+
+.menu {
+    border: 1px solid black;
+    font-size: 24px;
+    background: whitesmoke;
+    margin-top: 50px;
+}
+
+.menu1_1,
+.menu2_2,
+.menu3_3,
+.menu4_4,
+.menu5_5,
+.menu6_6,
+.menu7_7 {
+    display: block;
+    font-size: 20px;
+}
+
+.submenu1,
+.submenu2,
+.submenu3,
+.submenu4{
+    border: 1px solid black;
+    background: wheat
+}
+
+/* listLayer */
+#listLayer {
+    width: 1750px;
+    margin-top: 50px;
+    float: left;
+}
+#listLayer > #listPage{
+    padding: 20px 50px;
+}
+#listLayer > #listPage > h2{
+    padding: 20px 30px;
+    background: steelblue;
+    border-radius: 5px;
+}
+
+/* listLyaer > listBox */
+#listLayer > #listPage > #listBox{
+    width: 100%;
+    margin-top: 20px;
+}
+#listLayer > #listPage > #listBox > table{
+    width: 100%;
+    text-align: center;
+    border-top: 3px solid cornflowerblue;
+    border-bottom: 3px solid cornflowerblue;
+}
+#listLayer > #listPage > #listBox > table > tbody > tr > th{
+    background: blanchedalmond;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+#listLayer > #listPage > #listBox > table > tbody > tr > td{
+    padding: 20px 20px;
+    font-size: 15px;
+    border-bottom: 1px solid #999;
+}
+#listLayer > #listPage > #listBox > table > tbody > tr:last-child > th{
+    border-bottom: none;
+}
+#listLayer > #listPage > #listBox > table > tbody > tr:last-child > td{
+    border-bottom: none;
+}
+#listLayer > #listPage > #listBox > table > tbody > tr > td:nth-child(2){
+    text-align: left;
+}
+#listLayer > #listPage > #listBox > table > tbody > tr > td > input{
+    margin-right: 5px;
+}
+#listLayer > #listPage > #listBox > table > tbody > tr > td > span{
+    color: lightseagreen;
+    font-weight: bold;
+}
+#listLayer > #listPage > #listBox > table > tbody > tr > td > button{
+    padding: 0px 5px;
+}
