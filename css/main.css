@@ -56,10 +56,18 @@ a {
     align-items: center;
   }
 
-  .cube__face--front {
+ .blackline>li{
+     width: 10px;
+     height: 10px;
+     border: 1px solid gray;
+     box-sizing: border-box;
+     float: left;
+ }
+
+  /*.cube__face--front {
     background: rgba(90, 110, 126, 0.7);
     transform: rotateY(0deg) translateZ(100px);
-  }
+  }*/
   
   .cube__face--back {
     background: rgba(231, 228, 211, 0.7);
