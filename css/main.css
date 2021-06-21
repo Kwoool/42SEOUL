@@ -13,6 +13,8 @@ a {
     text-decoration: none;
 }
 
+/*mobile css is located bottom*/
+
 /*header*/
 
 .header {
@@ -46,8 +48,8 @@ a {
   
   .cube__face {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     color: #fff;
     font-size: 2.5em;
     font-family: monospace;
@@ -71,27 +73,27 @@ a {
   
   .cube__face--back {
     background: rgba(231, 228, 211, 0.7);
-    transform: rotateY(180deg) translateZ(100px);
+    transform: rotateY(180deg) translateZ(70px);
   }
   
   .cube__face--right {
     background: rgba(241, 239, 226, 0.7);
-    transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(70px);
   }
   
   .cube__face--left {
     background: rgba(187, 217, 238, 0.7);
-    transform: rotateY(-90deg) translateZ(100px);
+    transform: rotateY(-90deg) translateZ(70px);
   }
   
   .cube__face--top {
     background:rgba(235, 244, 250, 0.7);
-    transform: rotateX(90deg) translateZ(100px);
+    transform: rotateX(90deg) translateZ(70px);
   }
   
   .cube__face--bottom {
     background: rgba(192, 192, 192, 0.7);
-    transform: rotateX(-90deg) translateZ(100px);
+    transform: rotateX(-90deg) translateZ(70px);
   }
   
   html {
@@ -392,8 +394,30 @@ a {
     margin-left: 30px;
 }
 
+/*mobile css*/
+
+/*mobile header css*/
+
+@media (max-width :1200px){
+    
+    .mobile{
+        display: none;
+    }
+
+    .mobile_float{
+        float: left;
+        margin-bottom: 20px;
+    }
 
 
 
+
+
+
+
+
+
+
+}
 
 
