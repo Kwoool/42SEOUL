@@ -4,7 +4,8 @@
 
 function apply(){
     cardList = document.querySelector('.counseling');
-    li = document.createElement('li');      
+    li = document.createElement('li');
+          
     div1 =document.createElement('div')
     div1.className = "delete_box delBtn"
     div1.innerHTML = "X"

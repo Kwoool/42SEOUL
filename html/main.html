@@ -25,7 +25,6 @@
             <a href="###">
                 <div class="scene">
                     <div class="cube">
-                        <div class="cube__face cube__face--front"></div>
                         <div class="cube__face cube__face--back"><ul class="blackline"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>
                         <div class="cube__face cube__face--right"><ul class="blackline"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>
                         <div class="cube__face cube__face--left"><ul class="blackline"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>
@@ -68,7 +67,7 @@
             <!--햄버거 메뉴-->
             <div class="hamberger">
             <input type="checkbox" id="menu">
-            <label for="menu">
+            <label for="menu" class="three_bar" onclick="menu_on()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -191,17 +190,44 @@
         <!--햄버거 메뉴 눌렀을때 나올 흰 바탕 화면 --- absolute,hide 이용해서 숨어있다가 메뉴 누르면 display 변화식으로-->
           <!--mobile hamberger menu start-->
             
-        <div class="menu_container">
-            !!!!!!sdfsdf
+        <div class="menu_container menu_clicked">
+                <input type="checkbox" id="menu1">
+                <label for="menu1" class="x_bar" onclick="menu_out()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            <h1>학원소개</h1>
+            <h1>교육과정</h1>
+            <h1>취업자인터뷰</h1>
+            <h1>알람 및 질문</h1>
+            <h1>지원서</h1>
+            <h1>로그인</h1>
+            <h1>회원가입</h1>
+            <a href="###" class="mobile_apply">지원하기</a>
+        
+            <div class="footer1">
+                <ul class="footer_menu">
+                    <li class="string_bold">42 SEOUL</li>
+                    <li class="string_bold">Innovation Acamemy</li>
+                </ul>
+                <ul class="footer_menu">
+                    <li class="string_bold">CONTACT</li>
+                    <li>qna@innovationacademy.kr</li>
+                </ul>
+                <ul class="footer_menu">
+                    <li class="string_bold">LOCATION</li>
+                    <li>416, Gaepo-ro, Gangnam-gu,</li>
+                    <li>Seoul, Republic of Korea</li>
+                </ul>
+                <div class="footer_menu">
+                    <img src="../img/img4.svg">
+                    <img src="../img/img5.svg">
+                    <img src="../img/img6.svg">
+                </div>
+            </div>
         </div>
-
-
-
-
-
         <!--mobile hamberger menu end-->
-
-
     </body>
 
 </html>
