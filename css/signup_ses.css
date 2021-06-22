@@ -23,7 +23,7 @@ a {
 
 /*header*/
 
-.header {
+.header{
     width: 100vw;
     height: 65.38px;
     padding: 0 10%;
@@ -211,7 +211,6 @@ input[id="menu2"] + label span:nth-child(2) {
         color: black;
     }
 }
-
 
 /*footer*/
 
