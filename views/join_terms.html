@@ -10,18 +10,7 @@
     <body>
         <div id="warp">
             <!--상단바 고정 메뉴 시작-->
-            <div class="header">
-                <a href="###"><img src="/images/logo.jpg"></a>
-                <div class="header_menu">
-                    <a href="###">학원소개</a>
-                    <a href="###">교육과정</a>
-                    <a href="###">취업자인터뷰</a>
-                    <a href="###">알림</a>
-                    <a href="###">지원 및 질문</a>
-                    <a id="loginBtn" href="###">로그인</a>
-                    <a href="###">회원가입</a>
-                </div>
-            </div>
+            {% include "./layout/top.html" %}
             <!--상단바 고정 메뉴 끝-->
             
             <!--로그인 레이어 팝업 시작-->
@@ -108,6 +97,9 @@
                 </div>
             </div>
             <!--회원가입 레이어 끝-->
+
+            {% include "./layout/footer.html" %}
+
         </div>
     </body>
 {% include "./layout/bottom.html" %}

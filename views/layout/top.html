@@ -1,13 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    {% include '../logincheck.html' %}
-    <!--
-        CSS파일이 많아질수있슴.
-    -->
-</head>
-<body>
+<!--header start-->
+<div class="header">
+    <a href="/">
+        <div class="scene">
+            <div class="cube">
+                <div class="cube__face cube__face--back"><ul class="blackline"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>
+                <div class="cube__face cube__face--right"><ul class="blackline"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>
+                <div class="cube__face cube__face--left"><ul class="blackline"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>
+                <div class="cube__face cube__face--top"><ul class="blackline"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>
+                <div class="cube__face cube__face--bottom"><ul class="blackline"><li></li><li></li><li><li></li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>
+            </div>
+        </div>
+    </a>
+    <div class="logo">
+        <a href="/"></a>
+    </div>
+    <div class="header_menu mobile">
+        <a href="/introduce" class="menubtn">학원소개</a>
+        <a href="/cource" class="menubtn">교육과정</a>
+        <a href="/interview" class="menubtn">취업자인터뷰</a>
+        <a href="/" class="menubtn">알림 및 질문</a>
+        <a href="/" class="menubtn">지원서</a>
+        <a id="loginBtn" class="menubtn">로그인</a>
+        <a href="/join_signup" class="menubtn">회원가입</a>
+    </div>
+    <div id="bush" class="hide_menu">
+        <div class="hide_menu1">
+            <li>
+                <a href="/notice" class="menubtn">공지사항</a>
+            </li>
+            <li>
+                <a href="FAQ" class="menubtn">FAQ</a>
+            </li>
+        </div>
+        <div class="hide_menu2">
+            <li>
+                <a href="/apply" class="menubtn">지원하기</a>
+            </li>
+            <li>
+                <a href="/review" class="menubtn">수강후기</a>
+            </li>
+        </div>
+    </div>
+</div>

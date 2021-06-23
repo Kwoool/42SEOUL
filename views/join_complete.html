@@ -10,40 +10,7 @@
 <body>
     <div id="wrap">
 
-        <!--header start-->
-        <div class="header">
-            <div class="logo">
-                <a href="###"><img src="../images/logo.jpg"></a>
-            </div>
-            <div class="header_menu">
-                <a href="###" class="menubtn">학원소개</a>
-                <a href="###" class="menubtn">교육과정</a>
-                <a href="###" class="menubtn">취업자인터뷰</a>
-                <a href="###" class="menubtn">지원 및 질문</a>
-                <a href="###" class="menubtn">알림</a>
-                <a href="###" class="menubtn">로그인</a>
-                <a href="###" class="menubtn">회원가입</a>
-            </div>
-            <div id="bush" class="hide_menu">
-                <div class="hide_menu1">
-                    <li>
-                        <a href="###" class="menubtn">공지사항</a>
-                    </li>
-                    <li>
-                        <a href="###" class="menubtn">수강후기</a>
-                    </li>
-                </div>
-                <div class="hide_menu2">
-                    <li>
-                        <a href="###" class="menubtn">지원하기</a>
-                    </li>
-                    <li>
-                        <a href="###" class="menubtn">FAQ</a>
-                    </li>
-                </div>
-            </div>
-        </div>
-        <!--header end-->
+        {% include "./layout/top.html" %}
 
         <!--container start-->
         <div class="container">
@@ -62,28 +29,7 @@
         </div>
         <!--container end-->
 
-        <!--footer start-->
-        <div class="footer">
-            <ul class="footer_menu">
-                <li class="string_bold">42 SEOUL</li>
-                <li class="string_bold">Innovation Acamemy</li>
-            </ul>
-            <ul class="footer_menu">
-                <li class="string_bold">CONTACT</li>
-                <li>qna@innovationacademy.kr</li>
-            </ul>
-            <ul class="footer_menu">
-                <li class="string_bold">LOCATION</li>
-                <li>416, Gaepo-ro, Gangnam-gu,</li>
-                <li>Seoul, Republic of Korea</li>
-            </ul>
-            <div class="footer_menu">
-                <img src="../images/img1.svg">
-                <img src="../images/img2.svg">
-                <img src="../images/img3.svg">
-            </div>
-        </div>
-        <!--footer end-->
+        {% include "./layout/footer.html" %}
 
     </div>
 </body>

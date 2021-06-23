@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/css/interview_write.css">
+    </head>
+    <body>
+        <div id="wrap">
+
+            {% include "./layout/top.html" %}
+
+            <!--container start-->
+            <div class="container">
+                <form id="form_data" method="POST">
+                    <div class="content_bigbox">
+                        <div class="small_box">
+                            <th>제목 :</th>
+                            <td><input
+                                type="text"
+                                name="title"
+                                id="title"
+                                class="form-control"
+                                placeholder="제목을 입력해주세요"></td>
+                        </div>
+                        <div class="small_box">
+                            <th>작성자 :</th>
+                            <input
+                                type="text"
+                                name="title"
+                                id="title"
+                                class="form-control"
+                                placeholder="이름">
+                        </div>
+                        <div class="small_box">
+                            <th>교육과정 :</th>
+                            <input
+                                type="text"
+                                name="title"
+                                id="title"
+                                class="form-control"
+                                placeholder="제목">
+                        </div>
+                        <div class="small_box">
+                            <th>내용
+                            </th>
+                            <textarea
+                                cols="10"
+                                name="contents"
+                                id="contents"
+                                class="form-control"
+                                placeholder="내용을 입력해주세요"></textarea>
+                        </div>
+                        <input type="submit" class="btn_outline" value="저장하기">
+                    </div>
+                </form>
+            </div>
+            <!--container end-->
+
+            {% include "./layout/footer.html" %}
+
+        </div>
+    </body>
+    {% include "./layout/bottom.html" %}

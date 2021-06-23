@@ -5,47 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FAQ</title>
-        <script type="text/javascript" src="../js/FAQ.js"></script>
-        <link rel="stylesheet" href="../css/FAQ.css">
+        <script type="text/javascript" src="/js/FAQ.js"></script>
+        <link rel="stylesheet" href="/css/FAQ.css">
     </head>
     <body>
         <div id="wrap">
-            <!--header start-->
-            <div class="header">
-                <a href="###"><img src="../../img/logo.jpg"></a>
-                <div class="header_menu">
-                    <a href="###">학원소개</a>
-                    <a href="###">교육과정</a>
-                    <a href="###">취업자인터뷰</a>
-                    <a href="###">알림</a>
-                    <a href="###">지원 및 질문</a>
-                    <a id="loginBtn" href="###">로그인</a>
-                    <a href="###">회원가입</a>
-                </div>
-            </div>
-            <!--header end-->
             
-            <!--login start-->
-            <div id="loginLayer">
-                <div id="loginPopup" style="margin-top: 200px;">
-                    <div id="loginForm">
-                        <h2>로그인이나 로고 넣기</h2>
-                        <input id="userid" type="text" placeholder="아이디">
-                        <input id="userpw" type="password" placeholder="비밀번호">
-                        <button id="login" class="loginSubmit">로그인</button>
-                        <div id="or">
-                            <div id="line"></div>
-                            <div id="or_text"><h3>또는</h3></div>
-                            <div id="line" style="float: right;"></div>
-                        </div>
-                        <h3 style="margin-top: 30px;"><a href="#">회원 가입<a></h3>
-                        <h3><a href="#">채팅 문의<a></h3>
-                        <h3><a href="#">메일 문의<a></h3>
-                    </div>
-                </div>
-            </div>
-            <!--login end-->
-            
+            {% include "./layout/top.html" %}
+
             <!--FAQ start-->
             <div id="FAQLayer">
                 <div id="FAQPage">
@@ -142,6 +109,9 @@
                 </div>
             </div>
             <!--FAQ end-->
+
+            {% include "./layout/footer.html" %}
+
         </div>
     </body>
-</html>
+{% include "./layout/bottom.html" %}

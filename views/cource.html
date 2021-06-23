@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cource</title>
+        <link rel="stylesheet" href="/css/cource.css">
+    </head>
+    <body>
+        <div id="wrap">
+
+            {% include "./layout/top.html" %}
+
+            <!--container start-->
+            <div class="container">
+                <h1>Curriculum
+                </h1>
+                <div class="content">
+                    <ul>
+                        <li class="content_box">
+                            id<br>
+                            제목<br>
+                            교육시작일<br>
+                            내용<br>
+                            사용여부<br>
+                            <div>해쉬태그 들어갈 자리</div> <!--DB에서 데이터 받아서 들어가는 곳-->
+                        </li>
+                        <li class="content_box">123</li>
+                        <li class="content_box">333</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li class="content_box">3333333333</li>
+                        <li class="content_box">444444444444</li>
+                        <li class="content_box">555555555</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li class="content_box"></li>
+                        <li class="content_box"></li>
+                        <li class="content_box"></li>
+                    </ul>
+                </div>
+            </div>
+            <!--container end-->
+
+            {% include "./layout/footer.html" %}
+
+        </div>
+    </body>
+    {% include "./layout/bottom.html" %}
