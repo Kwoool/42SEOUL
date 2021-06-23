@@ -1,0 +1,23 @@
+{% include '../logincheck.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {%for item in loadReview %}
+    <form method="post" action="/review/modify_success">
+        
+        제목<input type="text" id="title" name="title" value="{{item.title}}"><br/>
+        <input type="text" name="boardid" value="{{boardid}}" style="display:none">
+        내용<textarea id="title" name="content">{{item.content}}</textarea><br/>
+        <input type="submit" id="submit" value="제출">
+     
+    </form>
+    {% endfor %}
+</body>
+
+</html>

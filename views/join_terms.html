@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Join_terms</title>
+        <link rel="stylesheet" href="/css/join.css">
+    </head>
+    <body>
+        <div id="warp">
+            <!--상단바 고정 메뉴 시작-->
+            <div class="header">
+                <a href="###"><img src="/images/logo.jpg"></a>
+                <div class="header_menu">
+                    <a href="###">학원소개</a>
+                    <a href="###">교육과정</a>
+                    <a href="###">취업자인터뷰</a>
+                    <a href="###">알림</a>
+                    <a href="###">지원 및 질문</a>
+                    <a id="loginBtn" href="###">로그인</a>
+                    <a href="###">회원가입</a>
+                </div>
+            </div>
+            <!--상단바 고정 메뉴 끝-->
+            
+            <!--로그인 레이어 팝업 시작-->
+            <div id="loginLayer">
+                <div id="loginPopup" style="margin-top: 200px;">
+                    <div id="loginForm">
+                        <h2>로그인이나 로고 넣기</h2>
+                        <input id="userid" type="text" placeholder="아이디">
+                        <input id="userpw" type="password" placeholder="비밀번호">
+                        <button id="login" class="loginSubmit">로그인</button>
+                        <div id="or">
+                            <div id="line"></div>
+                            <div id="or_text"><h3>또는</h3></div>
+                            <div id="line" style="float: right;"></div>
+                        </div>
+                        <h3 style="margin-top: 30px;"><a href="#">회원 가입<a></h3>
+                        <h3><a href="#">채팅 문의<a></h3>
+                        <h3><a href="#">메일 문의<a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--로그인 레이어 팝업 끝-->
+            
+            <!--회원가입 레이어 시작-->
+            <div id="joinLayer">
+                <div id="joinPage">
+                    <form id="submitCheck" method="GET" action="/user/join_signup">
+                        <div id="joinBox">
+                            <h2>회원가입</h2>
+                            <div id="joinContent">
+                                <div id="joinImageBox">
+                                    <div id="joinImage">
+                                        <img src="/images/character.png">
+                                    </div>
+                                </div>
+                                <h5>회원가입 약관 동의 단계입니다.</h5>
+                                <div id="termsBox">
+                                    <div id="terms">
+                                        <div id="termsTitle">
+                                            <h5>홈페이지 이용약관 동의
+                                                <span>(필수)</span>
+                                                <input type="checkbox" required>
+                                            </h5>
+                                        </div>
+                                        <div id="termsText">
+                                            <div id="termsTextInner">
+                                                내용1<br/>내용1<br/>내용1<br/>내용1<br/>내용1<br/>
+                                                내용1<br/>내용1<br/>내용1<br/>내용1<br/>내용1<br/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="terms">
+                                        <div id="termsTitle">
+                                            <h5>개인정보 수집 및 이용 동의
+                                                <span>(필수)</span>
+                                                <input type="checkbox" required>
+                                            </h5>
+                                        </div>
+                                        <div id="termsText">
+                                            <div id="termsTextInner">
+                                                내용2<br/>내용2<br/>내용2<br/>내용2<br/>내용2<br/>
+                                                내용2<br/>내용2<br/>내용2<br/>내용2<br/>내용2<br/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="terms">
+                                        <div id="termsTitle">
+                                            <h5>E-mail 및 SMS 광고성 정보 수신 동의 (선택)
+                                                <input type="checkbox">
+                                            </h5>
+                                        </div>
+                                        <h5>다양한 교육 정보와 신규 이벤트를 알려 드립니다.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" id="agreeBtn">
+                                <div id="agreeText">동의하고 넘어가기</div>
+                            </button>
+                            <button type="button" id="agreeBtn">
+                                <div id="agreeText" onclick="history.back(-1);">뒤로가기</div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--회원가입 레이어 끝-->
+        </div>
+    </body>
+{% include "./layout/bottom.html" %}

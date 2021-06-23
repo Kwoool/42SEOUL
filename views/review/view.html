@@ -1,0 +1,14 @@
+{% for item in reviewList %}
+제목: {{item.title}} <br/>
+작성자: {{item.userid}} <br/>
+강의명: {{getSub}} <br/>
+내용: {{item.content}} <br/>
+날짜: {{item.date}} <br/>
+조회수: {{item.hit}} <br/>
+
+{% if signedinId == item.userid%}
+
+<a href="/review/modify?id={{item.id}}">수정하기</a>
+<a href="/review/delete?id={{item.id}}">삭제하기</a>
+{% endif %}
+{% endfor %}

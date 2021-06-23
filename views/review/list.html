@@ -1,0 +1,40 @@
+
+<!--후기 리스트 -->
+    <div id="main" class="center">
+        <div id="board">
+            <table id="list">   
+                <tr>
+                    <td>No.</td>
+                    <td>Title</td>
+                    <td>Writer</td>
+                    <td>Date</td>
+                    <td>Hit</td>
+                </tr>
+                {% for item in revList %}
+
+                <tr>
+                    <td>{{item.num}}</td>
+                    <td><a href="/review/view?id={{item.id}}">{{item.title}}</a></td>
+                    <td>{{item.userid}}</td>
+                    <td>{{item.date}}</td>
+                    <td>{{item.hit}}</td>
+                </tr>
+                <div style="display:none">{{item.id}}</div>
+                {% endfor %}
+                
+            </table>
+            <a href="/review/write">글쓰기</a>
+        </div>
+    </div>
+</body>
+<script type = "text/javascript">
+    async function getLoginStat(){
+        let result = await fetch('http://localhost:3000/review/write')
+        let {msg} = await result.json();
+        // if(asdf){
+        //     location.href=result.
+        // }
+        alert(msg)
+    }
+</script>
+</html>

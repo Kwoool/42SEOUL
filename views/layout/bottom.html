@@ -1,0 +1,66 @@
+<script type = "text/javascript">
+    function init(){
+    const loginBtn = document.querySelector('#loginBtn');
+    const loginLayer = document.querySelector('#loginLayer');
+    const localLoginBtn = document.querySelector('#login');
+
+    loginBtn.addEventListener('click',loginPopupOpen);
+    loginLayer.addEventListener('click', loginPopupClose);
+    localLoginBtn.addEventListener('click', localLoginFn);
+    
+    // 로그인 팝업
+    function loginPopupOpen(){
+        loginLayer.classList.add('show');
+    }
+    function loginPopupClose(event){
+        if (event.target == this){
+            this.classList.remove('show');
+        }
+    }
+    function loginPopupClose2(){
+        loginLayer.classList.remove('show');
+    }
+
+    async function localLoginFn(){
+        console.log('로그인 시도중')
+        
+        const userid = document.querySelector('#userid');
+        const userpw = document.querySelector('#userpw');
+        let url = 'http://localhost:3000/auth/local/login'
+
+        let options = {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                userid:userid.value,
+                userpw:userpw.value,
+            })
+        }
+        
+        console.log(options);
+
+        let response = await fetch(url,options);
+        let json = await response.json();
+        let {result, msg, id} = json;
+        
+        console.log('result : ',result);
+
+        if(result){
+            console.log('로그인 완료');
+            loginPopupClose2();
+            res.render('../views/join_signup.html');
+        } else{
+            console.log('로그인 실패');
+            userid.value = '';
+            userpw.value = '';
+            userid.focus();
+            alert('아이디 또는 패스워드가 일치하지 않습니다')
+        }
+    }
+}
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</html>
